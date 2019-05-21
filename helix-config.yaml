@@ -1,0 +1,15 @@
+#
+# helix configuration for local development
+#
+version: 1
+
+definitions:
+  defaults:
+    - &defaultRepo "ssh://git@github.com/moritzraho/trying-helix.git"
+
+strains:
+  - name: default
+    code: ssh://git@github.com/moritzraho/trying-helix.git#master
+    content: ssh://git@github.com/moritzraho/trying-helix.git#master
+    static: ssh://git@github.com/moritzraho/trying-helix.git/htdocs#master
+    package: mraho/github-com--moritzraho--trying-helix--master-dirty
